@@ -1,11 +1,9 @@
 #IPC
 #By:Yaniv
 #21-Dec-21
-## This program shows demonstrate various IPC techniques interleaved together.
-## It is compound out of 4 processes which work together to calculate given math exersizes 
-## from input files, like 5 * 10:
-## The processes are: main, producer, consumer and ipc (python - just for fun)
-## 
+###### This program demonstrates various IPC techniques interleaved together. It is compound out of 4 processes which work together to calculate given math exersizes from input files, like 5 * 10. The processes are: main, producer, consumer and ipc (python - just for fun)
+###### To compile: gcc -o ipc main.c producer.c consumer.c -lpthread -lrt
+###### Run example: ./ipc -f data_files/file1.txt -f data_files/file2.txt -f data_files/file3.txt
 ## The main process
 ###### Launch first and accept file names as input
 ###### 1. It creates 2 **semaphores** - empty and full, that will serve as syncronization means 
